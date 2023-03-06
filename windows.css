@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-::root {
+html::root {
     --background: #f8f8f8;
     --primary: #c7d1db;
     --text: #000;
     --secondary: #fff;
 }
 
-[data-theme="light"] {
+html[data-theme="light"] {
     --background: #f8f8f8;
     --primary: #c7d1db;
     --text: #000;
     --secondary: #fff;
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
     --background: #202124;
     --primary: darkslategrey;
     --text: #f8f8f8;
