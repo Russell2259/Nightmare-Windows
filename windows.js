@@ -76,12 +76,12 @@ function Window(config) {
 
     var appname = document.createElement('div');
     appname.innerText = config.title;
-    appname.classList= 'name';
+    appname.classList = 'name';
     bar.appendChild(appname);
 
     var appfull = document.createElement('div');
     appfull.innerText = '\u26F6';
-    appfull.classList= 'full';
+    appfull.classList = 'full';
     bar.appendChild(appfull);
 
     appfull.addEventListener('click', (e) => {
@@ -90,11 +90,11 @@ function Window(config) {
 
     var appclose = document.createElement('div');
     appclose.innerText = 'X';
-    appclose.classList= 'close';
+    appclose.classList = 'close';
     bar.appendChild(appclose);
 
     appclose.addEventListener('click', (e) => {
-        appclose(e.target);
+        closeapp(e.target);
     })
 
     if (config.type == 'url') {
