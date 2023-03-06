@@ -1,89 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('themes.css');
 
 .window {
-background: white;
-border-radius: 5px;
-position: fixed !important;
-filter: drop-shadow(0 4px 4px rgba(0,0,0,0.16));
-overflow: hidden;
-font-family: Roboto;
-}
-
-.windowdark {
-background: #202124;
-box-shadow: 0 1px 6px 0 #171717;
-filter: none;
+    background: var(--background);
+    border-radius: 5px;
+    position: fixed !important;
+    filter: drop-shadow(0 4px 4px var(--secondary));
+    overflow: hidden;
+    font-family: Roboto;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .bar {
-width: 100%;
-height: 40px;
-line-height: 40px;
-background: #f8f8f8;
-border-bottom: 1px solid #e3e3e3;
-border-radius: 5px 5px 0 0;
-display: flex;
-user-select: none;
-color: black;
-}
-
-.bardark {
-background: #303134;
-border-bottom: 1px solid #3c4043;
-color: white;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: var(--secondary);
+    border-bottom: 1px solid var(--primary);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    user-select: none;
+    color: var(--text);
+    cursor: grab;
 }
 
 .web {
-border: none;
-background: white;
-width: 100%;
-height: 100%;
-}
-
-.webdark {
-background: #202124;
+    border: none;
+    background: var(--background);
+    width: 100%;
+    height: 100%;
 }
 
 .html {
-border: none;
-background: white;
-width: 100%;
-height: 100%;
+    border: none;
+    background: var(--background);
+    width: 100%;
+    height: 100%;
 }
 
-.htmldark {
-background: #202124;
+.bar>.name {
+    text-align: left;
+    margin-left: 5px;
+    font-size: 18px;
 }
 
-.appname {
-text-align: left;
-margin-left: 5px;
-font-size: 18px;
+.bar>.close {
+    margin-right: 5px;
+    cursor: pointer;
+    background: #fa6357;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--text);
 }
 
-.appclose {
-margin-right: 5px;
-cursor: pointer;
-background: #fa6357;
-border-radius: 100%;
-height: 30px;
-width: 30px;
-margin-top: 5px;
-text-align: center;
-line-height: 30px;
-color: white;
-}
-
-.appfull {
-margin-left: auto;
-margin-right: 5px;
-cursor: pointer;
-background: darkslategrey;
-border-radius: 100%;
-height: 30px;
-width: 30px;
-margin-top: 5px;
-text-align: center;
-line-height: 30px;
-color: white;
+.bar>.full {
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+    background: var(--primary);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--text);
 }

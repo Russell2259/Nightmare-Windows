@@ -1,0 +1,20 @@
+::root {
+    --background: #f8f8f8;
+    --primary: #c7d1db;
+    --text: #000;
+    --secondary: #fff;
+}
+
+[data-theme="light"] {
+    --background: #f8f8f8;
+    --primary: #c7d1db;
+    --text: #000;
+    --secondary: #fff;
+}
+
+[data-theme="dark"] {
+    --background: #202124;
+    --primary: darkslategrey;
+    --text: #f8f8f8;
+    --secondary: #303134;
+}
