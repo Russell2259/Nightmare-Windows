@@ -2,8 +2,8 @@
 Add the js and css CDN and create a new window
 
 ```html
-<script src="https://russell2259.github.io/nightmare-windows/windows.js"></script>
-<link rel="stylesheet" href="https://russell2259.github.io/nightmare-windows/windows.css">
+<script src="https://russell2259.github.io/Nightmare-Windows/windows.js"></script>
+<link rel="stylesheet" href="https://russell2259.github.io/Nightmare-Windows/windows.css">
 ```
 ```js
 new Window({
